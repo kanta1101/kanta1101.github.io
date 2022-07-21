@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<html lang="ja">
+    <head>
+        <meta charset="utf-8">
+        <title>最終課題</title>
+        <link rel="stylesheet" href="./css/styles.css">
+    </head>
+
+    <body>
+        <header>
+            <h1 id="top">最終課題</h1>
+        </header>
+
+        <div><h3>動物落ちものパズルゲームを作成しました。以下のリンクから飛べます。</h3></div>
+        <div><h3>操作方法は矢印キーです。右左下入力で移動、上入力で回転ができます。</h3></div>
+
+        <div>
+            <a href="./sub/index.html"><h2 id="linkhead">こちらをクリック</h2></a>
+        </div>
+
+        <div>下でじゃんけんもできます。</div>
+
+        <div><h2 id="linkhead">じゃんけんプログラム</h2>
+            <!--HTMLからJavascriptの関数を実行する-->
+            <button type="button" onclick="Janken(0);">グー</button>
+            <button type="button" onclick="Janken(1);">チョキ</button>
+            <button type="button" onclick="Janken(2);">パー</button>
+            <p id="selected"></p>
+            <p id="opponent"></p>
+            <p id="jankenResult"></p>
+        </div>
+
+        <div>世界のこんにちはも面白かったので追加して置いておきます。</div>
+
+        <div>
+            <h2 id="linkhead">世界のこんにちは</h2>
+            <!--HTMLからJavascriptの関数を実行する-->
+            <button type="button" onclick="hello(1)">日本語</button>
+            <button type="button" onclick="hello(2)">英語</button>
+            <button type="button" onclick="hello(3)">中国語</button>
+            <button type="button" onclick="hello(4)">韓国語</button>
+            <button type="button" onclick="hello(5)">ドイツ語</button>
+            <button type="button" onclick="hello(6)">フランス語</button>
+            <button type="button" onclick="hello(7)">スペイン語</button>
+            <button type="button" onclick="hello(8)">イタリア語</button>
+            <p id="hello"></p>
+        </div>
+
+        <script src="./js/janken.js"></script>
+        <script src="./js/hello.js"></script>
+        
+    </body>
+</html>
